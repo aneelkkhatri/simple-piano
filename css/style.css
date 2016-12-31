@@ -1,0 +1,73 @@
+
+html, body {
+	margin: 0;
+	font-family: sans-serif;
+}
+#fixed-header {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+#container {
+	height: 100%;
+	width: 2100px;
+	margin: 0;
+	text-align: 
+}
+#piano-header {
+	height: 20%;
+}
+#piano-footer {
+	height: 30%;
+}
+#simple-piano {
+	height: 50%;
+	position: relative;
+	margin-left: 14px;
+}
+
+.piano-key {
+	outline: solid 1px #999;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+.piano-key.white-key {
+	width: 1.91%;
+	height: 100%;
+	color: #444;
+	background-color: #fffff6;
+}
+.piano-key.white-key.pressed {
+	background-color: #ddddd6;
+}
+.piano-key.black-key {
+	width: 1.136%;
+	height: 60%;
+	color: #fffff6;
+	background-color: #555;
+
+	z-index: 2;
+}
+.piano-key.black-key.pressed {
+	background-color: #333;
+}
+.piano-key.white-key + .piano-key.black-key {
+	margin-left: -0.5681%;
+}
+
+.piano-key.black-key + .piano-key.white-key {
+	margin-left: -0.5681%;
+}
+
+#templates-container {
+	display: none;
+}
+
+.mapped-keys {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
